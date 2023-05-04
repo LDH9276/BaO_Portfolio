@@ -1,0 +1,436 @@
+@charset "utf-8";
+
+
+@media (prefers-color-scheme: dark) {
+  .join{
+    background: #000;
+  }
+  input{
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .join-container{
+    background: var(--m-color01);}
+}
+
+@media (prefers-color-scheme: light){
+  #mem_id, #mem_pass{
+    border: 1px solid #d9d9d9;
+    color: var(--m-color01);
+  }
+}
+
+@media screen and (min-width:1025px) {
+  main{
+    padding-top: 80px;
+  }
+  h2{
+    text-align: left;
+    font-size: var(--f-size04);
+  }
+  .join{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join-container{
+    width: 1170px;
+    display: flex;
+    gap: 30px;
+  }
+  .join-img{
+    width: 400px;
+    object-fit: cover;
+  }
+  .join-wrap{
+    width: 100%;
+    padding: 50px;
+  }
+  .join-wrap p{
+    display: flex;
+    line-height: 40px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .join-wrap p label{
+    display: block;
+    width: 110px;
+  }
+  
+  fieldset{
+    border: none;
+  }
+  legend{
+    display: none;
+  }
+  
+  input[type="text"], 
+  input[type="password"]{
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .join-zip-form input{
+    width: 30%;
+  }
+  .join-zip-form input:first-of-type{
+    margin-right: 10px;
+  }
+  .join-zip-form input:last-of-type{
+    margin-left: 10px;
+  }
+  
+  .join-tel-form input{
+    width: 15%;
+  }
+  .join-span{
+    padding: 0px 10px;
+    font-weight: 200;
+    color: #d9d9d9;
+  }
+  
+  .join-btn-form{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .join-btn{
+    width: 140px;
+    height: 40px;
+    margin: 0px 0px 0px 15px;
+    font-size: var(--f-size02);
+  }
+  .join-btn.reset{
+    border: 1px solid var(--m-color01);
+    color: var(--m-color01);
+    background: none;
+  }
+  .join-btn.submit{
+    border: 1px solid var(--m-color01);
+    color: #fff;
+    background: var(--m-color01);
+  }
+  
+  /* 체크박스 */
+  .join-check-confirm{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+  }
+  .check{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+  }
+  .check input[type="checkbox"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none !important;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+  }
+  .check input[type="checkbox"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    font-size: var(--f-size02);
+    transform: scale(0) translate(-50%, -50%);
+    line-height: 1;
+    color: var(--m-color01);
+  }
+  .check input[type="checkbox"]:checked::before {
+    border-radius: 4px;
+    transform: scale(1) translate(-50%, -50%)
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  main{
+    padding-top: 80px;
+  }
+  h2{
+    text-align: left;
+    font-size: var(--f-size04);
+  }
+  .join{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--m-color01);
+  }
+  .join-container{
+    width: 100%;
+    display: block;
+  }
+  .join-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .join-wrap{
+    width: 100%;
+    padding: 50px;
+  }
+  .join-wrap p{
+    display: flex;
+    line-height: 40px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .join-wrap p label{
+    display: block;
+    width: 110px;
+  }
+  
+  fieldset{
+    border: none;
+  }
+  legend{
+    display: none;
+  }
+  
+  input[type="text"], 
+  input[type="password"]{
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .join-zip-form input{
+    width: 30%;
+  }
+  .join-zip-form input:first-of-type{
+    margin-right: 10px;
+  }
+  .join-zip-form input:last-of-type{
+    margin-left: 10px;
+  }
+  
+  .join-tel-form input{
+    width: 15%;
+  }
+  .join-span{
+    padding: 0px 10px;
+    font-weight: 200;
+    color: #d9d9d9;
+  }
+  
+  .join-btn-form{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .join-btn{
+    width: 140px;
+    height: 40px;
+    margin: 0px 0px 0px 15px;
+    font-size: var(--f-size02);
+  }
+  .join-btn.reset{
+    border: 1px solid var(--m-color01);
+    color: var(--m-color01);
+    background: none;
+  }
+  .join-btn.submit{
+    border: 1px solid var(--m-color01);
+    color: #fff;
+    background: var(--m-color01);
+  }
+  
+  /* 체크박스 */
+  .join-check-confirm{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+  }
+  .check{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+  }
+  .check input[type="checkbox"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none !important;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+  }
+  .check input[type="checkbox"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    font-size: var(--f-size02);
+    transform: scale(0) translate(-50%, -50%);
+    line-height: 1;
+    color: var(--m-color01);
+  }
+  .check input[type="checkbox"]:checked::before {
+    border-radius: 4px;
+    transform: scale(1) translate(-50%, -50%)
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  main{
+    padding-top: 60px;
+  }
+  h2{
+    text-align: left;
+    font-size: var(--f-size04);
+  }
+  .join{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join-container{
+    width: 100%;
+    display: block;
+  }
+  .join-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .join-wrap{
+    width: 100%;
+    padding: 50px;
+  }
+  .join-wrap p{
+    display: flex;
+    line-height: 40px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .join-wrap p label{
+    display: block;
+    width: 110px;
+  }
+  
+  fieldset{
+    border: none;
+  }
+  legend{
+    display: none;
+  }
+  
+  input[type="text"], 
+  input[type="password"]{
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .join-zip-form input{
+    width: 30%;
+  }
+  .join-zip-form input:first-of-type{
+    margin-right: 10px;
+  }
+  .join-zip-form input:last-of-type{
+    margin-left: 10px;
+  }
+  
+  .join-tel-form input{
+    width: 15%;
+  }
+  .join-span{
+    padding: 0px 10px;
+    font-weight: 200;
+    color: #d9d9d9;
+  }
+  
+  .join-btn-form{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .join-btn{
+    width: 140px;
+    height: 40px;
+    margin: 0px 0px 0px 15px;
+    font-size: var(--f-size02);
+  }
+  .join-btn.reset{
+    border: 1px solid var(--m-color01);
+    color: var(--m-color01);
+    background: none;
+  }
+  .join-btn.submit{
+    border: 1px solid var(--m-color01);
+    color: #fff;
+    background: var(--m-color01);
+  }
+  
+  /* 체크박스 */
+  .join-check-confirm{
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+  }
+  .check{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .check input[type="checkbox"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none !important;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+  }
+  .check input[type="checkbox"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    font-size: var(--f-size02);
+    transform: scale(0) translate(-50%, -50%);
+    line-height: 1;
+    color: var(--m-color01);
+  }
+  .check input[type="checkbox"]:checked::before {
+    border-radius: 4px;
+    transform: scale(1) translate(-50%, -50%)
+  }
+}
