@@ -3,3 +3,4 @@ lib copy.php
 img/
 unused/
 productimg/
+.DS_Store
